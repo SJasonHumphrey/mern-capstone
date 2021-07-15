@@ -1,0 +1,46 @@
+{
+  "name": "mern-capstone",
+  "version": "1.0.0",
+  "description": "That's my mern-capstone project.",
+  "main": "index.js",
+  "scripts": {
+    "client-dev": "webpack-dev-server --port 4000 --hot --inline --watch --progress",
+    "server-dev": "opn http://localhost:8000 && nodemon ./app/server/public/server.js localhost 8000",
+    "build": "webpack -p",
+    "deploy": "mern-scripts deploy"
+  },
+  "engines": {
+    "node": "^8.5.0"
+  },
+  "author": "Author of mern-capstone",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^6.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mern-scripts": "^0.1.7",
+    "nodemon": "^2.0.12",
+    "opn-cli": "^4.1.0",
+    "serve": "^12.0.0",
+    "style-loader": "^3.1.0",
+    "svg-react-loader": "^0.4.6",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.44.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
