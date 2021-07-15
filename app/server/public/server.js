@@ -12,15 +12,15 @@ app.use(cors());
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, '../../../build')));
+//app.use(express.static(path.join(__dirname, '../../../build')));
 
 app.get('/', (req, res)=> {
-  res.send('Express server is up and running.');
+  res.json({'message':'Express server is up and running.'});
 })
 
 //GET request to server
 app.get('/api', (req, res)=> {
-  
+  res.json({'message':'Express server is up and running.'});
 });
 
 //POST request to server
@@ -38,8 +38,8 @@ app.put('/api', (req, res)=> {
   
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../../../build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, '../../../build', 'index.html'));
+// });
 
 app.listen(port, _=> console.log(`The server is listening on port ${port}`));
