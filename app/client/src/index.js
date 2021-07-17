@@ -11,13 +11,19 @@ import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 
 //styling
-import './index.css';
+
+import './styles/index.css';
+import './styles/main.css';
+import 'semantic-ui-css/semantic.min.css';
+
+
 
 //components
 import App from './components/App';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import BaseLayout from './components/layout/BaseLayout';
 
 //reducer
 import reducer from './reducers'
@@ -60,12 +66,14 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <Switch>
-          <Route  exact path = '/' component={App}/>
-          <Route  path = '/login' component={Login}/>
-          <Route  path = '/register' component={Register}/>
-          <Route  path = '/home' component={Home}/>
-        </Switch>
+        <BaseLayout>
+          <Switch>
+            <Route  exact path = '/' component={App}/>
+            <Route  path = '/login' component={Login}/>
+            <Route  path = '/register' component={Register}/>
+            <Route  path = '/home' component={Home}/>
+          </Switch>
+        </BaseLayout>
       </Router>
     </Provider>
   </React.StrictMode>,
