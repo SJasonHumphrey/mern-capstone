@@ -5,9 +5,9 @@ const Speed = (props) => {
 
     // check if symbols and seconds are not = 0
     //if true, return speed. else don't do anything
-    if(props.symbols !== 0 && props.sec !== 0){
+    if(props.correctSymbols !== 0 && props.sec !== 0){
         // divide number of words / number of minutes
-        const wpm = (props.symbols/5) / (props.sec/60)
+        const wpm = (props.correctSymbols/5) / (props.sec/60)
 
         return (
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TextPreview from './TextPreview'
 import Speed from './Speed'
+import Accuracy from './Accuracy'
 
 // typing speed/accuracy test
 
@@ -8,7 +9,8 @@ import Speed from './Speed'
 const initialState = {
     text: 'Test test',
     userInput: '',
-    symbols: 0,
+    totalSymbols: 0,
+    correctSymbols: 0,
     sec: 0,
     started: false,
     finished: false
@@ -32,13 +34,14 @@ export class TypingTest extends Component {
         this.onFinish(value)
         this.setState({
             userInput: value,
-            symbols: this.countCorrectSymbols(value),
+            correctSymbols: this.countCorrectSymbols(value),
 
         })
     }
 
     onFinish(userInput){
         // if user input === the preview text
+        // if user input 
         if (userInput === this.state.text){
             //stop timer
             clearInterval(this.interval);
@@ -91,7 +94,8 @@ export class TypingTest extends Component {
                 <textarea value={this.state.userInput} onChange={this.onUserInputChange} readOnly={this.state.finished} placeholder="Start Typing ..."></textarea>
                 
                 {/* speed calculated by WPM */}
-                <Speed sec={this.state.sec} symbols={this.state.symbols}/>
+                <Speed sec={this.state.sec} correctSymbols={this.state.correctSymbols}/>
+                <Accuracy text={this.state.text} correctSymbols={this.state.correctSymbols}  />
 
                 <button onClick={this.onRestart}>Restart</button>
             </div>

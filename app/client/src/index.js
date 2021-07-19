@@ -12,6 +12,7 @@ import thunk from 'redux-thunk';
 
 //styling
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //components
 import App from './components/App';
