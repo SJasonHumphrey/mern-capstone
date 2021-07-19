@@ -18,6 +18,7 @@ import App from './components/App';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import CodePen from "./components/Code"
 
 //reducer
 import reducer from './reducers'
@@ -65,6 +66,7 @@ ReactDOM.render(
           <Route  path = '/login' component={Login}/>
           <Route  path = '/register' component={Register}/>
           <Route  path = '/home' component={Home}/>
+          <Route  path = '/code' component={CodePen}/>
         </Switch>
       </Router>
     </Provider>
