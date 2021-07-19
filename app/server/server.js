@@ -51,7 +51,7 @@ async function main() {
     // await createMultipleFlashcards(client, newFlashcards)
     // await findFlashcardbyCategory(client, "A")
     // await updateFlashcardbyFront(client, "FRONT", {front: "TNORF"})
-    await deleteFlashcard(client, "TNORF")
+    // await deleteFlashcard(client, "TNORF")
 
   }
   catch(e){
