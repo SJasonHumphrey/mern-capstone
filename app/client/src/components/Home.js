@@ -1,25 +1,43 @@
 import React,{useState} from 'react';
-import {Menu,Grid} from 'semantic-ui-react';
+import {Link} from 'react-router-dom'
+import {Menu,Grid,Sidebar,Segment} from 'semantic-ui-react';
 
 
 const Home = () => {
     const [activeItem, setActiveItem] = useState('')
+    const [visible, setVisible] = useState(false)
 
     const handleItemClick = (e,{name}) => {
         setActiveItem(name)
+        setVisible(!visible)
+        console.log(visible)
     }
     
 
     return (
         <>
-        <Grid className="feature-grid">
-            <Grid.Column width={3} color="green" className="feature-col">
-                Col 1
-            </Grid.Column>
-            <Grid.Column width={13} color="blue" className="feature-col">
-                Col 2
-            </Grid.Column>
-        </Grid>
+        <Menu pointing secondary>
+            <Menu.Item
+            name="menu"
+            active={activeItem ==='menu'}
+            onClick={handleItemClick}
+            >Menu</Menu.Item>
+        </Menu>
+
+        <Sidebar.Pushable as={Segment}>
+            <Sidebar
+            as={Menu}
+            visible={visible}
+            animation='overlay'
+            vertical
+            >
+            <Menu.Item as='Link'>Typing Practice</Menu.Item>
+            <Menu.Item as='Link'>Quizzes</Menu.Item>
+            <Menu.Item as='Link'>Flashcards</Menu.Item>
+            </Sidebar>
+        </Sidebar.Pushable>
+                
+            
         </>
         
     )
