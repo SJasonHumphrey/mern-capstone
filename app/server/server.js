@@ -6,6 +6,7 @@ const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const { MongoServerSelectionError } = require('mongodb');
 let app = express();
+const env = require('./config/env')
 
 const port = process.env.PORT || 8000;
 
@@ -28,17 +29,19 @@ app.get('/', (req, res)=> {
  */
 
 async function main() {
-  const uri = "mongodb+srv://victoria:dc421@cluster0.53qbs.mongodb.net/Cluster0?retryWrites=true&w=majority"
+  const uri = env.CONNECTION_URL
   const client = new MongoClient(uri);
   try{
     await client.connect();
     console.log('db server running')
 
-    createFlashcard(client, {
-      category: "",
-      front: "",
-      back: ""
-    })
+    await listDatabases(client)
+
+    // createFlashcard(client, {
+    //   category: "",
+    //   front: "",
+    //   back: ""
+    // })
   }
   catch(e){
     console.log(e)
@@ -48,12 +51,13 @@ async function main() {
 }
 main().catch(console.error);
 
-async function createMultipleFlashcards(client, newFlashcards){
-  let result = await client.db("Capstone").collection("flashcards").insertMany(newFlashcards);
-
-  console.log(`${result.insertedCount} new flashcards created`)
+async function listDatabases(client){
+  const databasesList = await client.db().admin().listDatabases()
+  console.log("Databases:")
+  databasesList.databases.forEach(db => {
+    console.log(`- ${db.name}`)
+  })
 }
-
 
 /**
  * DOING CRUD FOR DB BELOW!!!  ************* CRUD **********
@@ -62,8 +66,13 @@ async function createMultipleFlashcards(client, newFlashcards){
 //CREATE:
 async function createFlashcard(client, newFlashcard) {
   const result = await client.db("Capstone").collection("flashcards").insertOne(newFlashcard)
-
   console.log(`New flashcard created with id: ${result.insertedId}`);
+}
+
+async function createMultipleFlashcards(client, newFlashcards){
+  let result = await client.db("Capstone").collection("flashcards").insertMany(newFlashcards);
+
+  console.log(`${result.insertedCount} new flashcards created`)
 }
 
 
