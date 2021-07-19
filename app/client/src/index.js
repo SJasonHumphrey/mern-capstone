@@ -15,6 +15,7 @@ import thunk from 'redux-thunk';
 import './styles/index.css';
 import './styles/main.css';
 import 'semantic-ui-css/semantic.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

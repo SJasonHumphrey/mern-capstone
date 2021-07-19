@@ -6,21 +6,26 @@ import {Grid} from 'semantic-ui-react'
 const BaseLayout = (props) => {
     return (
         <>
-        <Grid columns={16}>
-            <Grid.Row color="">
+        
+        
+            {/* <Grid.Row color=""> */}
                 <Header/>
-            </Grid.Row>
+            {/* </Grid.Row> */}
 
-            <Grid.Row color="" centered textAlign='left'>
+            {/* <Grid.Row color="" centered textAlign='left'> */}
+            <Grid >
                 <div className='main' children={props.children}/>
                 
+                 
                 <div/>
-            </Grid.Row>
+            </Grid>
+            {/* </Grid.Row> */}
 
-            <Grid.Row color="" >
+            {/* <Grid.Row color="" > */}
                 <Footer />
-            </Grid.Row >
-        </Grid>
+            {/* </Grid.Row > */}
+        
+        
         </>
     )
 }
