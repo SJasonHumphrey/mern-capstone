@@ -23,7 +23,6 @@ app.get('/', (req, res)=> {
 
 
 
-
 /**
  * SETTING UP DATABASE CONNECTION:
  */
@@ -31,47 +30,48 @@ app.get('/', (req, res)=> {
 async function main() {
   const uri = env.CONNECTION_URL
   const client = new MongoClient(uri);
+
+  let newFlashcards = [
+    {category: "A",
+    front: "FRONT",
+    back: "BACK"},
+    {category: "B",
+    front: "FrOnT",
+    back: "BaCk"},
+    {category: "B",
+    front: "front",
+    back: "back"},
+    {category: "A",
+    front: "FronT",
+    back: "BacK"}]
+
   try{
     await client.connect();
     console.log('db server running')
-
-    await listDatabases(client)
-
-    // createFlashcard(client, {
-    //   category: "",
-    //   front: "",
-    //   back: ""
-    // })
+    await createMultipleFlashcards(client, newFlashcards)
   }
   catch(e){
     console.log(e)
   }finally {
+    console.log('db server closing')
     await client.close();
   }
 }
 main().catch(console.error);
 
-async function listDatabases(client){
-  const databasesList = await client.db().admin().listDatabases()
-  console.log("Databases:")
-  databasesList.databases.forEach(db => {
-    console.log(`- ${db.name}`)
-  })
-}
 
 /**
  * DOING CRUD FOR DB BELOW!!!  ************* CRUD **********
  */
 
 //CREATE:
-async function createFlashcard(client, newFlashcard) {
-  const result = await client.db("Capstone").collection("flashcards").insertOne(newFlashcard)
-  console.log(`New flashcard created with id: ${result.insertedId}`);
-}
+// async function createFlashcard(client, newFlashcard) {
+//   const result = await client.db("Capstone").collection("flashcards").insertOne(newFlashcard)
+//   console.log(`New flashcard created with id: ${result.insertedId}`);
+// }
 
-async function createMultipleFlashcards(client, newFlashcards){
-  let result = await client.db("Capstone").collection("flashcards").insertMany(newFlashcards);
-
+async function createMultipleFlashcards(client, newFlashArr){
+  const result = await client.db("Capstone").collection("flashcards").insertMany(newFlashArr);
   console.log(`${result.insertedCount} new flashcards created`)
 }
 
