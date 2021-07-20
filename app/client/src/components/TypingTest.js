@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import TextPreview from './TextPreview'
 import Speed from './Speed'
 
+
+
 // typing speed/accuracy test
 
 // what the state is reset to when we click "restart"
@@ -81,19 +83,51 @@ export class TypingTest extends Component {
 
     render() {
         return (
-            <div>
-                {/* what user needs to type */}
-                {/* pass text and userInput from state as props to compare against each other for errors etc. */}
-                <TextPreview text={this.state.text} userInput={this.state.userInput}/> <br/> 
+            // <div>
+            //     <Container>
+            //         <Row>
+            //             {/* what user needs to type */}
+            //             {/* pass text and userInput from state as props to compare against each other for errors etc. */}
+            //             <Col>
+            //             <TextPreview text={this.state.text} userInput={this.state.userInput}/>
+            //             </Col>
+            //         </Row>
+            //     </Container>
 
-                {/* where the user will type */}
-                {/* if user is done typing, make textarea readOnly */}
-                <textarea value={this.state.userInput} onChange={this.onUserInputChange} readOnly={this.state.finished} placeholder="Start Typing ..."></textarea>
+            //     {/* where the user will type */}
+            //     {/* if user is done typing, make textarea readOnly */}
+            //     <textarea value={this.state.userInput} onChange={this.onUserInputChange} readOnly={this.state.finished} placeholder="Start Typing ..."></textarea>
                 
-                {/* speed calculated by WPM */}
-                <Speed sec={this.state.sec} symbols={this.state.symbols}/>
+            //     {/* speed calculated by WPM */}
+            //     <Speed sec={this.state.sec} symbols={this.state.symbols}/>
 
-                <button onClick={this.onRestart}>Restart</button>
+            //     <button onClick={this.onRestart}>Restart</button>
+            // </div>
+
+            <div className="container mt-5 mb-5">
+                <div className="row">
+
+                    <div className="col-md-6 offset-md-3">
+                        <h4 className="col-md-6 offset-md-3">Test your typing skills</h4>
+                        {/* what user needs to type */}
+                        {/* pass text and userInput from state as props to compare against each other for errors etc. */}
+                        <TextPreview text={this.state.text} userInput={this.state.userInput}/>
+                        {/* where the user will type */}
+                        {/* if user is done typing, make textarea readOnly */}
+                        <textarea
+                        value={this.state.userInput}
+                        onChange={this.onUserInputChange}
+                        className="form-control mb-3"
+                        placeholder="Start typing..."
+                        readOnly={this.state.finished}
+                        ></textarea>
+                        {/* speed calculated by WPM */}
+                        <Speed sec={this.state.sec} symbols={this.state.symbols}/>
+                        <div className="text-right">
+                            <button className="btn btn-light" onClick={this.onRestart}>Restart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

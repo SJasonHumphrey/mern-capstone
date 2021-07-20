@@ -10,7 +10,7 @@ const TextPreview = (props) => {
 
   return (
     <>
-      <div style={{width: "300px", border: "2px solid black"}}>
+      <div className="border rounded p-3 mb-4">
           {/* make a new array from text with current element (currentChar)
           and index of current element (index)
           */}
