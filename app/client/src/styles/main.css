@@ -1,0 +1,39 @@
+
+
+.main{
+    min-height:80vh;
+    width:100vw;
+    background-color: #f9d4fe;
+    color:black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
+}
+
+.no-padding{
+    padding:0px
+}
+
+
+.footer-layout{
+    background-color: #f9d4fe;
+    border: 1px solid black;
+    min-height:10vh;
+}
+
+.yellow{
+    background-color: #f9d4fe;
+}
+
+.full-height{
+    height:80vh;
+}
+
+@media screen and (max-width: 786px) {
+    .full-height{
+        height:inherit;
+        margin-top:7em;
+    }
+    
+}
+
