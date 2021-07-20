@@ -5,8 +5,7 @@ function App() {
 
   return (
     <>
-    {/* landing page - explain app here and provide link to login register */}
-    <TypingTest/>
+        <TypingTest/>
     </>
   );
 }

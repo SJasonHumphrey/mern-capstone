@@ -85,26 +85,6 @@ export class TypingTest extends Component {
 
     render() {
         return (
-            // <div>
-            //     <Container>
-            //         <Row>
-            //             {/* what user needs to type */}
-            //             {/* pass text and userInput from state as props to compare against each other for errors etc. */}
-            //             <Col>
-            //             <TextPreview text={this.state.text} userInput={this.state.userInput}/>
-            //             </Col>
-            //         </Row>
-            //     </Container>
-
-            //     {/* where the user will type */}
-            //     {/* if user is done typing, make textarea readOnly */}
-            //     <textarea value={this.state.userInput} onChange={this.onUserInputChange} readOnly={this.state.finished} placeholder="Start Typing ..."></textarea>
-                
-            //     {/* speed calculated by WPM */}
-            //     <Speed sec={this.state.sec} symbols={this.state.symbols}/>
-
-            //     <button onClick={this.onRestart}>Restart</button>
-            // </div>
 
             <div className="container mt-5 mb-5">
                 <div className="row">
