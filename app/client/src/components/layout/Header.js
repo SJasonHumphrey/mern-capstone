@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom'
-//import {Grid, Menu} from 'semantic-ui-react';
 import {Navbar,Nav,Offcanvas} from 'react-bootstrap'
 
 const Header = () => {
@@ -11,17 +10,10 @@ const Header = () => {
     const handleShow = () => setVisible(true)
     return (
         <>
-    {/* <Grid.Column floated='left' width={16}>
-        <Menu secondary stackable borderless={true} className="">            
-            <Menu.Item header>Team Async</Menu.Item>
-            <Menu.Item as={Link} to='/login' position='right'>Login</Menu.Item>
-            <Menu.Item as={Link} to='/register' >Register</Menu.Item>
-            <Menu.Item as={Link} to='/home' >Home</Menu.Item>
-        </Menu>
-    </Grid.Column> */}
+    
         <Navbar collapseOnSelect expand="lg" className="footer-layout">
             <Navbar.Brand className="logo-top">
-            <Nav.Link as={Link} to="/"><img src="logo2.png" className="rem5"/></Nav.Link>
+            <Nav.Link as={Link} to="/"><img src="images/logo2.png" className="rem5"/></Nav.Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="main-navbar"className="me-3"/>
             <Navbar.Collapse id="main-navbar">
@@ -46,22 +38,28 @@ const Header = () => {
         </Navbar>
 
         <Offcanvas show={visible} onHide={handleClose} placement={'top'} >
-            <Offcanvas.Header closeButton className="yellow">
+            <Offcanvas.Header closeButton className="offCanvasColor">
                 <Offcanvas.Title>Study Tools</Offcanvas.Title>
             </Offcanvas.Header>
-            <Offcanvas.Body className="yellow">
+            <Offcanvas.Body className="offCanvasColor">
+                <Navbar>
                 <Nav>
-                    <Nav.Item >
-                    <Nav.Link as={Link} to="/login" onClick={handleClose}>Login</Nav.Link>
+                    <Nav.Item>
+                    <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w "><img src="images/color/keyboard.png" height="50px"/>Typing Practice</Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
-                    <Nav.Link as={Link} to="/login" onClick={handleClose}>Login</Nav.Link>
+                    <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w"><img src="images/color/laptopcoding.png" height="50px"/>Code Pen</Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
-                    <Nav.Link as={Link} to="/login" onClick={handleClose}>Login</Nav.Link>
+                    <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w"><img src="images/color/language.png" height="50px"/>Flash Cards</Nav.Link>
                     </Nav.Item>
+                    <Nav.Item >
+                    <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w"><img src="images/color/writing-code.png" height="50px"/>Quizzes</Nav.Link>
+                    </Nav.Item>
+                    
 
                 </Nav>
+                </Navbar>
 
             </Offcanvas.Body>
 

@@ -21,7 +21,7 @@
     min-height:10vh;
 }
 
-.yellow{
+.offCanvasColor{
     background-color: #f9d4fe;
 }
 
@@ -47,4 +47,8 @@
 
 .rem3{
     height: 3rem;
+}
+
+.rem12-w{
+    width: 12rem;
 }
