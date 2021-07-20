@@ -1,5 +1,5 @@
 import React from 'react';
-import TypingTest from './TypingTest'
+import TypingTest from './typing-feature/TypingTest'
 
 function App() {
 
