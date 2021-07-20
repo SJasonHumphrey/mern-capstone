@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const componentName = () => {
+const Home = () => {
     return (
-        <div>
-        home/dashboard page where features are rendered
-        </div>
+        <>
+        home/dashboard
+        </>
+        
     )
 }
 
-export default componentName
+export default Home
+
