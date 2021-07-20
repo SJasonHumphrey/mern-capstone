@@ -55,7 +55,7 @@ const Header = () => {
                     <Nav.Link as={Link} to="/login" onClick={handleClose}>Login</Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
-                    <Nav.Link as={Link} to="/login" onClick={handleClose}>Login</Nav.Link>
+                    <Nav.Link as={Link} to="/resources" onClick={handleClose}>Resources</Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
                     <Nav.Link as={Link} to="/login" onClick={handleClose}>Login</Nav.Link>
