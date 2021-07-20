@@ -1,24 +1,20 @@
 import React from 'react';
-import {Grid}from 'semantic-ui-react';
-import {Row,Col} from 'bootstrap-react';
-
+import {Container,Row,Col} from 'react-bootstrap';
 
 const Footer = () => {
     return (
         <>
-        {/* <Grid padded={false} className='footer-grid' >
-            <Grid.Column  width={8} textAlign='center'  verticalAlign='middle'>
-                <p>Copyright 2021 Team Ascync</p>
-            </Grid.Column>
-            <Grid.Column  width={8} textAlign='center'  verticalAlign='middle'>
-                <p>Some Other Text Here</p>
-            </Grid.Column>
-
-        </Grid> */}
+        <Container fluid className="footer-layout">
+            <Row className="">
+                <Col sm={12} md={6}>
+                    <p className="d-flex justify-content-center align-items center pt-2">Copyright Team Async 2021</p>
+                </Col>
+                <Col sm={12} md={6}>
+                <p className="d-flex justify-content-center align-items center pt-2">some other copy here</p>
+                </Col>
+            </Row>
+        </Container>
         
-
-
-
         </>
     )
 }

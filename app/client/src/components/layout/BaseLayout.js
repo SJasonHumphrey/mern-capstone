@@ -13,12 +13,12 @@ const BaseLayout = (props) => {
             {/* </Grid.Row> */}
 
             {/* <Grid.Row color="" centered textAlign='left'> */}
-            <Grid >
+            {/* <Grid > */}
                 <div className='main' children={props.children}/>
                 
                  
                 <div/>
-            </Grid>
+            {/* </Grid> */}
             {/* </Grid.Row> */}
 
             {/* <Grid.Row color="" > */}

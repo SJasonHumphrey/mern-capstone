@@ -3,8 +3,10 @@
 .main{
     min-height:80vh;
     width:100vw;
-    /* background-color: yellow; */
+    background-color: #f9d4fe;
     color:black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     
 }
 
@@ -13,26 +15,25 @@
 }
 
 
-.footer-grid{
-    /* min-height:15vh; */
+.footer-layout{
+    background-color: #f9d4fe;
     border: 1px solid black;
-    width:100%;
+    min-height:10vh;
 }
 
-.feature-menu{
-    height:100%;
+.yellow{
+    background-color: #f9d4fe;
 }
 
-.feature-menu-item{
-    height:33%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.full-height{
+    height:80vh;
 }
 
-.feature-grid{
-    height:100%;
+@media screen and (max-width: 786px) {
+    .full-height{
+        height:inherit;
+        margin-top:7em;
+    }
+    
 }
-.feature-col{
-    height:100%
-}
+
