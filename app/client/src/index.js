@@ -24,6 +24,7 @@ import App from './components/App';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import CodePen from "./components/Code"
 import BaseLayout from './components/layout/BaseLayout';
 
 //reducer
@@ -73,6 +74,7 @@ ReactDOM.render(
             <Route  path = '/login' component={Login}/>
             <Route  path = '/register' component={Register}/>
             <Route  path = '/home' component={Home}/>
+            <Route  path = '/code' component={CodePen}/>
           </Switch>
         </BaseLayout>
       </Router>
