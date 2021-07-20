@@ -1,44 +1,29 @@
 import React from 'react'
-import { Accordion } from 'react-bootstrap'
+// import { Accordion } from 'react-bootstrap'
+import Accordion from 'react-bootstrap/Accordion'
 
-const Resources = () => {
+export default function Resources() {
   return (
     <>
-        {/* Free code camp 
-        https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/
-
-        Javascript.info
-        https://javascript.info/
-
-        r/learnjavascript on Reddit
-        https://www.reddit.com/r/learnjavascript/
-
-        Zero To Code: How To Launch a Career in Software
-        https://zerotocode.today/ */}
-
-        <Accordion defaultActiveKey="0">
+        <Accordion>
             <Accordion.Item eventKey="0">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
+                <Accordion.Header>Javascript</Accordion.Header>
                 <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
+                    <ul>
+                        <li><a href=" https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">Free Code Camp</a></li> 
+                        <li><a href="https://javascript.info/">Javascript Info</a></li> 
+                        <li><a href="https://www.reddit.com/r/learnjavascript/">r/learnjavascript on Reddit</a></li> 
+                        <li><a href="https://zerotocode.today/">Zero To Code: How To Launch a Career in Software</a></li> 
+                    </ul>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>React.js</Accordion.Header>
                 <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
+                    <ul>
+                        <li><a href="https://reactjs.org/docs/getting-started.html">React.js Docs</a></li> 
+                        <li><a href="https://egghead.io/courses/the-beginner-s-guide-to-react">The Beginner's Guide to React</a></li> 
+                    </ul>
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
@@ -46,5 +31,5 @@ const Resources = () => {
   )
 }
 
-export default Resources
+// export default Resources
 
