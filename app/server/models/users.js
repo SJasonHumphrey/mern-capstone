@@ -8,4 +8,4 @@ var userSchema = new Schema({
     collection: 'users'
 })
 
-module.exports = mongoose.model('Flashcards', userSchema)
+module.exports = mongoose.model('users', userSchema)
