@@ -21,7 +21,7 @@ const Header = () => {
     </Grid.Column> */}
         <Navbar collapseOnSelect expand="lg" className="footer-layout">
             <Navbar.Brand className="logo-top">
-            <Nav.Link as={Link} to="/">Coding Buddy</Nav.Link>
+            <Nav.Link as={Link} to="/"><img src="logo2.png" className="rem5"/></Nav.Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="main-navbar"className="me-3"/>
             <Navbar.Collapse id="main-navbar">

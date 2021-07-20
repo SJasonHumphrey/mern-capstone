@@ -26,7 +26,7 @@
 }
 
 .full-height{
-    height:80vh;
+    min-height:80vh;
 }
 
 @media screen and (max-width: 786px) {
@@ -37,3 +37,14 @@
     
 }
 
+.rem7{
+    height: 7rem;
+}
+
+.rem5{
+    height: 5rem;
+}
+
+.rem3{
+    height: 3rem;
+}

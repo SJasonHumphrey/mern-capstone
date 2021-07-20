@@ -8,22 +8,11 @@ const BaseLayout = (props) => {
         <>
         
         
-            {/* <Grid.Row color=""> */}
                 <Header/>
-            {/* </Grid.Row> */}
-
-            {/* <Grid.Row color="" centered textAlign='left'> */}
-            {/* <Grid > */}
                 <div className='main' children={props.children}/>
-                
-                 
                 <div/>
-            {/* </Grid> */}
-            {/* </Grid.Row> */}
-
-            {/* <Grid.Row color="" > */}
                 <Footer />
-            {/* </Grid.Row > */}
+
         
         
         </>
