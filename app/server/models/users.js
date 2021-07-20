@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var PostFlashcard = mongoose.model('PostFlashcard',
-{
-    question: {type: String},
-    answer: {type:String},
+var userSchema = new Schema({
+    username: {type:String},
+    password: {type:String}
+}, {
+    collection: 'users'
 })
 
-module.exports = {PostFlashcard}
+module.exports = mongoose.model('Flashcards', userSchema)

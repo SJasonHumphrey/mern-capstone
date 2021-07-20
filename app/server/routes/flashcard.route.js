@@ -6,7 +6,7 @@ router = express.Router();
 let flashcardSchema = require('../models/flashcard');
 
 // CREATE 
-router.route('/addflashcard').post((req, res, next) => {
+router.route('/create-flashcard').post((req, res, next) => {
     flashcardSchema.create(req.body, (error, data) => {
         if (error) {
             return next(error)
@@ -18,7 +18,7 @@ router.route('/addflashcard').post((req, res, next) => {
 });
 
 // READ 
-router.route('/flashcard').get((req, res) => {
+router.route('/').get((req, res) => {
     flashcardSchema.find((error, data) => {
         if (error) {
             return next(error)

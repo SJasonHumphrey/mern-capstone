@@ -90,6 +90,20 @@
 // }
 
 
+/**
+ * THIS IS WHAT SUBMIT BUTTON ON CLIENT SIDE SHOULD LOOK LIKE::::
+ */
 
+//  onSubmit(e) {
+//     e.preventDefault()
 
+//     const flashcardObj = {
+//       question: this.state.question,
+//       answer: this.state.answer,
+//     };
+//     axios.post('http://localhost:8000/flashcards/create-flashcard', flashcardObject)
+//       .then(res => console.log(res.data));
+
+//     this.setState({ question: '', answer: ''})
+//   }
 
