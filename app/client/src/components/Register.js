@@ -3,7 +3,6 @@ import {Form,Button} from 'react-bootstrap';
 
 const Register = () => {
     return (
-        <>
         <div className="full-page-wrapper d-flex flex-column align-items-center justify-content-center mono-font">
             <Form className="drop-shadow bg-main  col-6 d-flex flex-column py-5">
                 <h2 className ="align-self-center my-3 mono-font"><span className="pink">&#123;</span>Create:Account<span className="pink" >&#125;</span></h2>
@@ -17,7 +16,6 @@ const Register = () => {
                 </Form.Group>
                 <Button type="submit" className="align-self-center my-3 btn-lg rounded-0" variant="outline-dark">Submit</Button>
             </Form>
-        </div>
         </div>
     )
 }
