@@ -48,6 +48,7 @@ const Header = () => {
                     <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/laptopcoding.png" height="50px"/>Code Pen</Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
+                    <Nav.Link as={Link} to="/resources" onClick={handleClose}>Resources</Nav.Link>
                     <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/language.png" height="50px"/>Flash Cards</Nav.Link>
                     </Nav.Item>
                     <Nav.Item >

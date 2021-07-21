@@ -24,6 +24,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import BaseLayout from './components/layout/BaseLayout';
+import Resources from './components/Resources'
 import CodePen from "./components/Code"
 import TypingTest from './components/typing-feature/TypingTest'
 import Cards from './components/Cards'
@@ -76,7 +77,11 @@ ReactDOM.render(
             <Route  path = '/register' component={Register}/>
             <Route  path = '/home' component={Home}/>
             <Route  path = '/code' component={CodePen}/>
+
             <Route  path = '/typing-test' component={TypingTest}/>
+
+            <Route  path = '/resources' component={Resources}/>
+
             <Route  path = '/cards' component={Cards}/>
           </Switch>
         </BaseLayout>
