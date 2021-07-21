@@ -15,15 +15,9 @@ export default function TopNavigation() {
                     </div>
 
                 </div>
-                <div>
-                    <br />
-                    <div className="buttons">
-                        <a target="_blank" href="https://codepen.io/accounts/signup/user/free"><button className="Topbutton2">Sign Up</button></a>
-                        <a target="_blank" href="https://codepen.io/login"><button className="Topbutton1">Log In</button></a>
-
-                    </div>
-                </div>
-            </div>
+            <div>
         </div>
+    </div>
+    </div>
     )
 }

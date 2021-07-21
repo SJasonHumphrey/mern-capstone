@@ -14,7 +14,6 @@ import thunk from 'redux-thunk';
 
 import './styles/index.css';
 import './styles/main.css';
-import 'semantic-ui-css/semantic.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -24,12 +23,12 @@ import App from './components/App';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
-import CodePen from "./components/Code"
 import BaseLayout from './components/layout/BaseLayout';
+import CodePen from "./components/Code"
 import TypingTest from './components/typing-feature/TypingTest'
+import Cards from './components/Cards'
 
 //reducer
-import reducer from './reducers'
 
 //utilize local storage
 const saveToLocalStorage = reduxGlobalState => {
@@ -77,6 +76,7 @@ ReactDOM.render(
             <Route  path = '/home' component={Home}/>
             <Route  path = '/code' component={CodePen}/>
             <Route  path = '/typing-test' component={TypingTest}/>
+            <Route  path = '/cards' component={Cards}/>
           </Switch>
         </BaseLayout>
       </Router>
