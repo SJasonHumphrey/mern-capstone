@@ -26,6 +26,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import CodePen from "./components/Code"
 import BaseLayout from './components/layout/BaseLayout';
+import TypingTest from './components/typing-feature/TypingTest'
 
 //reducer
 import reducer from './reducers'
@@ -75,6 +76,7 @@ ReactDOM.render(
             <Route  path = '/register' component={Register}/>
             <Route  path = '/home' component={Home}/>
             <Route  path = '/code' component={CodePen}/>
+            <Route  path = '/typing-test' component={TypingTest}/>
           </Switch>
         </BaseLayout>
       </Router>
