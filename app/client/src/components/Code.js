@@ -1,14 +1,15 @@
 import React from "react";
-import Editor from "./Editor";
-import TopNavigation from './TopNavigation'
-import Footer from './Footer'
-import useLocalStorage from "./hooks/useLocalStorage";
+import Editor from "./pages/codepen/Editor";
+import TopNavigation from './pages/codepen/TopNavigation'
+import Footer from "./pages/codepen/Footer";
+import uselocalStorage from './pages/codepen/hooks/useLocalStorage'
+
 
 
 function CodePen() {
-    const [html, setHtml] = useLocalStorage('html','');
-    const [css, setcss] = useLocalStorage('css', '');
-    const [js, setjs] = useLocalStorage('js', '');
+    const [html, setHtml] = uselocalStorage('html','');
+    const [css, setcss] = uselocalStorage('css','');
+    const [js, setjs] = uselocalStorage('js','');
 
 
     const srcDoc = `
@@ -20,7 +21,8 @@ function CodePen() {
         `;
 
     return (
-        <div className="container">
+        <div className="row">
+        <div className="container-fluid">
             <TopNavigation />
             <div className="main">
                 <div className="pane top-pane">
@@ -56,10 +58,10 @@ function CodePen() {
                         height="100%"
                     />
                 </div>
-
             </div>
             <Footer />
         </div>
+    </div>
 
     );
 }

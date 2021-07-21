@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import {Grid} from 'semantic-ui-react'
 
 const BaseLayout = (props) => {
     return (
@@ -16,7 +15,7 @@ const BaseLayout = (props) => {
             {/* <Grid > */}
                 <div className='main' children={props.children}/>
                 
-                 
+            
                 <div/>
             {/* </Grid> */}
             {/* </Grid.Row> */}
