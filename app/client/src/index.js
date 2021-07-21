@@ -29,6 +29,7 @@ import TypingTest from './components/typing-feature/TypingTest'
 import Cards from './components/Cards'
 
 //reducer
+import reducer from './reducers'
 
 //utilize local storage
 const saveToLocalStorage = reduxGlobalState => {

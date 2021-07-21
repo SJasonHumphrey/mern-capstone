@@ -9,7 +9,7 @@ import Accuracy from './Accuracy'
 
 // what the state is reset to when we click "restart"
 const initialState = {
-    text: 'Test test',
+    text: "{status && (<div className={`${className}...",
     userInput: '',
     totalSymbols: 0,
     correctSymbols: 0,

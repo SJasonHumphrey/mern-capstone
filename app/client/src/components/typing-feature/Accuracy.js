@@ -13,7 +13,7 @@ const Accuracy = (props) => {
 
   return (
     <>
-      <div>Accuracy: {accuracy}% </div>
+      <div>Accuracy: {accuracy.toFixed(2)}% </div>
     </>
   )
 }
