@@ -14,7 +14,6 @@ import thunk from 'redux-thunk';
 
 import './styles/index.css';
 import './styles/main.css';
-import 'semantic-ui-css/semantic.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -24,8 +23,9 @@ import App from './components/App';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
-import CodePen from "./components/Code"
 import BaseLayout from './components/layout/BaseLayout';
+import CodePen from "./components/Code"
+import Cards from './components/Cards';
 
 //reducer
 import reducer from './reducers'
@@ -75,6 +75,7 @@ ReactDOM.render(
             <Route  path = '/register' component={Register}/>
             <Route  path = '/home' component={Home}/>
             <Route  path = '/code' component={CodePen}/>
+            <Route  path = '/cards' component={Cards}/>
           </Switch>
         </BaseLayout>
       </Router>

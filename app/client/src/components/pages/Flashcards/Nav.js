@@ -1,4 +1,4 @@
-gitimport React from 'react'
+import React from 'react'
 import { GrCode } from 'react-icons/gr'
 
 export default function Nav(props) {
