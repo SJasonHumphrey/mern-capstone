@@ -1,41 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+/* pink #FC4557*/
+
+
+/* lavender #EFF1FB*/
+/**/
+
+
+/*elements*/
 
 .main{
     min-height:80vh;
     width:100vw;
-    background-color: #f9d4fe;
+    background-color:#FFEDEF;
     color:black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid #222F94;
+    border-right: 1px solid #222F94;
     
 }
 
-.no-padding{
-    padding:0px
+.footer-layout{
+    background-color: #FFEDEF;
+    border: 1px solid #222F94;
+    min-height:10vh;
+    color:#757579;
 }
 
-
-.footer-layout{
-    background-color: #f9d4fe;
-    border: 1px solid black;
-    min-height:10vh;
+.study-image{
+    width:100%;
+    
 }
 
 .offCanvasColor{
-    background-color: #f9d4fe;
+    background-color: #FFEDEF;
 }
 
-.full-height{
-    min-height:80vh;
+.full-page-wrapper{
+    width:100vw;
+    height:100vh;
 }
 
-@media screen and (max-width: 786px) {
-    .full-height{
-        height:inherit;
-        margin-top:7em;
-    }
-    
+
+
+/*Color*/
+
+.pink{
+    color:#FC4557;
 }
+
+.blue{
+    color:#222F94;
+}
+
+.lavender{
+    color:#EFF1FB;
+}
+
+.bg-lav{
+    background-color: #5665D9;
+}
+
+.bg-main{
+    background-color: #DDF8FC;
+}
+
+
+
+/*sizing*/
 
 .rem7{
     height: 7rem;
@@ -51,4 +82,37 @@
 
 .rem12-w{
     width: 12rem;
+}
+
+.full-height{
+    min-height:80vh;
+}
+
+@media screen and (max-width: 786px) {
+    .full-height{
+        min-height:40vh;
+        /* margin-top:7em; */
+    }
+    
+}
+
+
+.codingBuddyLogo{
+    width:25rem;
+}
+
+.no-padding{
+    padding:0px
+}
+
+/*fonts*/
+
+.mono-font{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/*misc*/
+
+.drop-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
