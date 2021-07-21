@@ -18,7 +18,7 @@ const Register = () => {
                 <Button type="submit" className="align-self-center my-3 btn-lg rounded-0" variant="outline-dark">Submit</Button>
             </Form>
         </div>
-        </>
+        </div>
     )
 }
 
