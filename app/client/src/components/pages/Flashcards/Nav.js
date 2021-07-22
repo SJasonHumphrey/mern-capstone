@@ -1,5 +1,5 @@
 import React from 'react'
-import { GrCode } from 'react-icons/gr'
+import { FaCode } from 'react-icons/fa';
 
 export default function Nav(props) {
   const setView = props.setView;
@@ -32,7 +32,7 @@ export default function Nav(props) {
     <div className="bg-main flash-card-nav">
     <nav className="navbar d-flex flex-column flex-md-row justify-content-end mb-4">
       <div className="navbar-brand mr-0">
-        <h4 className=" cursor-pointer mono-font"><GrCode/> Coding Flashcards</h4>
+        <h4 className=" cursor-pointer mono-font"><FaCode className="text-white"/> Coding Flashcards</h4>
       </div>
       <div className="ml-md-auto mono-font">
         <button onClick={handleReviewClick} className='btn m-1 rounded-0 btn btn-outline-light'>Review</button>
