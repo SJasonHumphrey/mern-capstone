@@ -47,9 +47,9 @@
     width:100vw;
 }
 
-.flash-card-front{
-    width:500px;
-    height:300px;
+.flash-card-face{
+    height:100%;
+    overflow-x:hidden;
 }
 
 
@@ -75,6 +75,9 @@
 .bg-main{
     background-color: #222F94;
     color:white;
+}
+.bg-pink{
+    background-color: #FC4557;
 }
 
 
