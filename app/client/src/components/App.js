@@ -17,8 +17,8 @@ function App() {
       <Col>
         <div className="d-flex flex-column justify-content-center align-items-center full-height ">
         <p className="text-center p-5">
-        <h3 className="mono-font p-3">Worlds Best Coding Study Tool</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h3 className="mono-font p-3">World's Best Coding Study Tool</h3>
+        Welcome to Coding Buddy! Here you will find tools to up your HTML, CSS, and Javascript game. Features that we currently offer are: a code-centered typing test, customizable flashcards, a Code Pen for testing and showcasing code snippets, quizzes to test your knowledge, and a resources page to keep your Google-searching to a minimum. We hope you enjoy our site. Happy coding!
         </p>
         <Button size="lg" variant="outline-dark" className="rounded-0 mb-5 mono-font">Make your study time count</Button>
         </div>
