@@ -50,7 +50,7 @@ const ReviewCards = () => {
 
   return (
     <div>
-      <h2 className="text-center font-weight-bold mb-3"><i className="fas fa-book-open icon"></i> Review</h2>
+      <h2 className="text-center mono-font mb-3"><i className="fas fa-book-open icon"></i> Review</h2>
       { state.cards.length === 0 ?
         <h2 className="text-center font-weight-bold pt-4">Create flash cards first!</h2>
       : <div>

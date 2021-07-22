@@ -29,15 +29,17 @@ export default function Nav(props) {
   }
 
   return (
+    <div className="bg-main flash-card-nav">
     <nav className="navbar d-flex flex-column flex-md-row justify-content-end mb-4">
       <div className="navbar-brand mr-0">
-        <h4 className="font-weight-bold cursor-pointer"><GrCode/> Coding Flashcards</h4>
+        <h4 className=" cursor-pointer mono-font"><GrCode/> Coding Flashcards</h4>
       </div>
-      <div className="ml-md-auto">
-        <button onClick={handleReviewClick} className='btn m-1 bg-info text-white'>Review</button>
-        <button onClick={() => setView('view-cards')} className='btn m-1 bg-info text-white'>View Cards</button>
-        <button onClick={() => setView('create-card')} className='btn m-1 bg-info text-white'>Create Card</button>
+      <div className="ml-md-auto mono-font">
+        <button onClick={handleReviewClick} className='btn m-1 rounded-0 btn btn-outline-light'>Review</button>
+        <button onClick={() => setView('view-cards')} className='btn m-1 rounded-0 btn btn-outline-light'>View Cards</button>
+        <button onClick={() => setView('create-card')} className='btn m-1 rounded-0 btn btn-outline-light'>Create Card</button>
       </div>
     </nav>
+    </div>
   )
 }

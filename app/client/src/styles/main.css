@@ -40,6 +40,18 @@
     height:100vh;
 }
 
+.flash-card-textarea{
+    width:80%;
+}
+.flash-card-nav{
+    width:100vw;
+}
+
+.flash-card-front{
+    width:500px;
+    height:300px;
+}
+
 
 
 /*Color*/
@@ -117,3 +129,4 @@
 .drop-shadow{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
