@@ -39,7 +39,7 @@ export default class CreateCard extends Component {
   render() {
     return (
       <div>
-        <h2 className="text-center font-weight-bold mb-3">Create New Card</h2>
+        <h2 className="text-center font-weight-bold mb-3 mono-font ">Create New Card</h2>
         <div className="container">
           <Form
             card={this.state}

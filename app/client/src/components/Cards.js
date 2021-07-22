@@ -81,7 +81,7 @@ export default class Cards extends Component {
     const setActiveCard = this.setActiveCard;
     const setView = this.setView;
     return (
-      <div className="container">
+      <div className="container-fluid p-0">
         <Nav setView={this.setView} view={this.state.view} setActiveCard={this.setActiveCard} />
         <ContextProvider value={{ state, setActiveCard, setView }} >
           {this.getView()}

@@ -6,8 +6,17 @@
 /* lavender #EFF1FB*/
 /**/
 
-
 /*elements*/
+a{
+    color:#222F94 !important;
+    text-decoration: none  !important ;
+  }
+
+a:hover{
+    color: #5665D9 !important;
+}
+
+
 
 .main{
     min-height:80vh;
@@ -35,6 +44,7 @@
     color: black !important;
     text-decoration: none !important;
 }
+
 .study-image{
     width:100%;
 
@@ -51,6 +61,18 @@ ul {
 .full-page-wrapper{
     width:100vw;
     height:100vh;
+}
+
+.flash-card-textarea{
+    width:80%;
+}
+.flash-card-nav{
+    width:100vw;
+}
+
+.flash-card-face{
+    height:100%;
+    overflow-x:hidden;
 }
 
 
@@ -76,7 +98,11 @@ ul {
 }
 
 .bg-main{
-    background-color: #DDF8FC;
+    background-color: #222F94;
+    color:white;
+}
+.bg-pink{
+    background-color: #FC4557;
 }
 
 
@@ -131,3 +157,4 @@ ul {
 .drop-shadow{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+

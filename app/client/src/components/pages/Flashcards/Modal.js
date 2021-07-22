@@ -20,9 +20,9 @@ const Modal = props => {
         <h5 className="font-weight-bold">Are you sure you want to delete this card?</h5>
         <span><span className="font-weight-bold">{'Q: '}</span>{card.question}</span>
         <span><span className="font-weight-bold">{'A: '}</span>{card.answer}</span>
-        <div className="d-flex justify-content-end mt-3">
-          <button type="button" onClick={cancel} className="btn btn-outline-danger mr-2">Cancel</button>
-          <button type="button" onClick={confirm} className="btn btn-outline-success">Confirm</button>
+        <div className="d-flex justify-content-center mt-3">
+          <button type="button" onClick={cancel} className="btn btn-outline-dark rounded-0 mr-2">Cancel</button>
+          <button type="button" onClick={confirm} className="btn btn-outline-dark rounded-0">Confirm</button>
         </div>
       </div>
     </div>
