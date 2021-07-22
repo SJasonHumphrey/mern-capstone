@@ -6,8 +6,15 @@
 /* lavender #EFF1FB*/
 /**/
 
-
 /*elements*/
+a{
+    color:#222F94 !important;
+    text-decoration: none  !important ;
+  }
+
+a:hover{
+    color: #5665D9 !important;
+}
 
 .main{
     min-height:80vh;
