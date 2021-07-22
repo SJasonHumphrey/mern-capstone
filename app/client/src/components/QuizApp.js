@@ -8,9 +8,10 @@ function QuizApp() {
   const [start, setStart] = useState(false);
 
   return (
-    
-    <div className="quiz">
-      { start ? <Quiz /> : <Start props={setStart} />} 
+    <div>
+        <div className="quiz d-flex justify-content-center">
+            { start ? <Quiz /> : <Start props={setStart} />} 
+        </div>
     </div>
   );
 }

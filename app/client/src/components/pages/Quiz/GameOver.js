@@ -18,7 +18,7 @@ const GameOver = ({pts}) => {
     return (
         <>
             <Title>Game Over</Title>
-            <Points>You did {pts} out of 10!</Points>
+            <Points>You got {pts} out of 10!</Points>
             <Button onClick={refreshPage}>Retry</Button>
         </>
     )
