@@ -25,22 +25,22 @@ export default function ViewCards(props) {
       { isOpen &&
         <Modal activeCard={cards[activeCard]} toggleModal={toggleModal} deleteCards={props.deleteCards}/>
       }
-      <h2 className="text-center font-weight-bold mb-3">My Cards</h2>
+      <h2 className="text-center mono-font mb-3">My Cards</h2>
       <div className="container">
         <div className="row row-cols-md-3 row-cols-1">
           { cards.map((card, i) => {
             return (
               <div key={i} className="col mb-4">
                 <div className="card h-100">
-                  <div className="card-body bg-info">
+                  <div className="card-body bg-pink">
                     <h5 className="card-title text-white font-weight-bold">Question:</h5>
                     <p className="card-text text-white">{card.question}</p>
                   </div>
-                  <div className="card-body" style={{backgroundColor:'#4427C9'}}>
+                  <div className="card-body bg-main" >
                     <h5 className="card-title text-white font-weight-bold">Answer:</h5>
                     <p className="card-text text-white">{card.answer}</p>
                   </div>
-                  <div className="card-footer text-center d-flex justify-content-end" style={{backgroundColor:'#2C1981'}}>
+                  <div className="card-footer text-center d-flex justify-content-end" style={{backgroundColor:'#161F63'}}>
                     <FaPencilAlt onClick={() => handleUpdate(i)} className="mt-1 text-white"/>
                     <FaTrashAlt onClick={() => handleModal(i)} className="m-1 text-white"/>
                   </div>

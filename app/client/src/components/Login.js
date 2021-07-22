@@ -15,7 +15,7 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type='text' placeholder='enter password'></Form.Control>
                 </Form.Group>
-                <Button type="submit" className="align-self-center my-3 btn-lg rounded-0" variant="outline-dark">Submit</Button>
+                <Button type="submit" className="align-self-center my-3 btn-lg rounded-0" variant="outline-light">Submit</Button>
             </Form>
             </div>
 
