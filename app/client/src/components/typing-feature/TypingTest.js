@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TextPreview from './TextPreview'
 import Speed from './Speed'
 import Accuracy from './Accuracy'
+import GetText from './GetText'
 
 
 
@@ -9,7 +10,7 @@ import Accuracy from './Accuracy'
 
 // what the state is reset to when we click "restart"
 const initialState = {
-    text: "{status && (<div className={`${className}...",
+    text: GetText(),
     userInput: '',
     totalSymbols: 0,
     correctSymbols: 0,
@@ -23,8 +24,8 @@ export class TypingTest extends Component {
     state = initialState
 
     // set state back to empty once we restart
-    onRestart = () => {
-        this.setState(initialState)
+    onRestart = () => {;
+        this.setState(initialState);
     }
 
     // when the user types, set the userInput state to whatever they typed
@@ -90,7 +91,7 @@ export class TypingTest extends Component {
                 <div className="row">
 
                     <div className="col-md-8 offset-md-2">
-                        <h4 className="col-md-8 offset-md-4">Test your typing skills</h4>
+                        <h4 className="d-flex justify-content-center mono-font mb-3">Test your typing skills</h4>
                         {/* what user needs to type */}
                         {/* pass text and userInput from state as props to compare against each other for errors etc. */}
                         <TextPreview text={this.state.text} userInput={this.state.userInput}/>
@@ -104,12 +105,15 @@ export class TypingTest extends Component {
                         readOnly={this.state.finished}
                         ></textarea>
                         {/* speed calculated by WPM */}
-                        <Speed sec={this.state.sec} correctSymbols={this.state.correctSymbols}/>
-                        <Accuracy text={this.state.text} correctSymbols={this.state.correctSymbols}></Accuracy>
-                        <div className="text-right">
-                            <button className="btn btn-light" onClick={this.onRestart}>Restart</button>
+                        <div className="d-flex justify-content-between">
+                            <div>
+                                <Speed sec={this.state.sec} correctSymbols={this.state.correctSymbols}/>
+                                <Accuracy text={this.state.text} correctSymbols={this.state.correctSymbols}></Accuracy>
+                            </div>
+                            <div>
+                                <button className="btn rounded-0 btn-outline-dark mono-font" onClick={this.onRestart}>Restart</button>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
