@@ -1,15 +1,14 @@
 import React from 'react'
 import './index.css';
-import logo from './assets/logo.png'
+import { FaCodepen } from 'react-icons/fa';
 
 
 
 export default function TopNavigation() {
     return (
-        <div>
             <div className="mainheader">
                 <div className="right">
-                    <img className="logo" src={logo} alt="logo"/>
+                    <FaCodepen className="text-white"/>
                     <div className="text">
                         <h2 className="mono-font ">Code Pen</h2>
                     </div>
@@ -17,7 +16,6 @@ export default function TopNavigation() {
                 </div>
             <div>
         </div>
-    </div>
     </div>
     )
 }
