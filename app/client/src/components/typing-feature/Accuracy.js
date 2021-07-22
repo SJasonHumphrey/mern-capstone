@@ -12,8 +12,9 @@ const Accuracy = (props) => {
     
 
   return (
-    <>
-      <div>Accuracy: {accuracy.toFixed(2)}% </div>
+    <> 
+    {/* changing to percentage completed for now */}
+      <div>Percentage Completed: {accuracy.toFixed(2)}% </div>
     </>
   )
 }

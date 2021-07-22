@@ -17,7 +17,7 @@ body {
 }
 
 .mainheader {
-	background-color: #1e1f26;
+	background-color: #222F94;;
 	/* margin-top: -1.9%; */
 	height: 11vh;
 	display: flex;
@@ -124,18 +124,18 @@ iframe {
 }
 
 .cm-s-material.CodeMirror {
-	background-color: #1D1E22 !important;
+	background-color: #222F94 !important;
 	color: #EEFFFF !important;
 }
 
 .cm-s-material .CodeMirror-gutters {
-	background-color: #1D1E22 !important;
+	background-color: #222F94 !important;
 }
 
 .cm-s-material .CodeMirror-guttermarker,
 .cm-s-material .CodeMirror-guttermarker-subtle,
 .cm-s-material .CodeMirror-linenumber {
-	color: #34363E !important;
+	color: #5665D9 !important;
 }
 
 .pane {
@@ -156,17 +156,18 @@ iframe {
 	/* padding-left: 0.5rem; */
 	padding-top: 0.2rem;
 	/* padding-bottom: 0.5rem; */
-	background-color: #444857
+	background-color: #5665D9
 }
 
 .editor-title {
-	background-color: #1A1B1F;
+	background-color: #222F94;
 	padding: 0.5rem 0.5rem 0.5rem 1rem;
 	padding-left: 1rem !important;
-	font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+	font-family: 'Share Tech Mono', monospace;
+	/* font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif; */
 	white-space: nowrap;
 	font-weight: bold;
-	color: #aaaebc;
+	color: #fff;
 	margin: 0;
 	font-size: 1.2em;
 	display: inline-block;
@@ -206,7 +207,7 @@ iframe {
 
 .footer {
 	color: #9b9dad;
-    background: #2c303a;
+    background: #222F94;
     border: 1px solid #444857;
 }
 
