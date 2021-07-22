@@ -8,13 +8,23 @@
 
 /*elements*/
 a{
-    color:#222F94 !important;
+    color:#757579 !important;
     text-decoration: none  !important ;
   }
 
 a:hover{
-    color: #5665D9 !important;
+    color: black !important;
 }
+
+li a{
+    color: black !important;
+}
+li a:hover{
+    color:#222F94 !important;
+    text-decoration: none  !important ;
+}
+
+
 
 
 
