@@ -91,7 +91,7 @@ export class TypingTest extends Component {
                 <div className="row">
 
                     <div className="col-md-8 offset-md-2">
-                        <h4 className="d-flex justify-content-center mono-font mb-3">Test your typing skills</h4>
+                        <h4 className="d-flex justify-content-center font-weight-bold mono-font mb-3">Test your typing skills</h4>
                         {/* what user needs to type */}
                         {/* pass text and userInput from state as props to compare against each other for errors etc. */}
                         <TextPreview text={this.state.text} userInput={this.state.userInput}/>

@@ -7,7 +7,7 @@ export default function Resources() {
         <div className="container mt-5 mb-5">
             <div className="row">
                 <div className="col-md-10 offset-md-1">
-                    <h4 className="d-flex justify-content-center mono-font">Useful Resources</h4>   
+                    <h4 className="d-flex justify-content-center font-weight-bold mono-font">Useful Resources</h4>   
                     <Accordion>
                         <Accordion.Item defaultActiveKey eventKey="0">
                             <Accordion.Header>Javascript</Accordion.Header>
