@@ -28,6 +28,8 @@ import Resources from './components/Resources'
 import CodePen from "./components/Code"
 import TypingTest from './components/typing-feature/TypingTest'
 import Cards from './components/Cards'
+import QuizApp from './components/QuizApp';
+
 
 //reducer
 import reducer from './reducers'
@@ -83,6 +85,8 @@ ReactDOM.render(
             <Route  path = '/resources' component={Resources}/>
 
             <Route  path = '/cards' component={Cards}/>
+
+            <Route  path = '/quiz' component={QuizApp}/>
           </Switch>
         </BaseLayout>
       </Router>

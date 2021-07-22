@@ -63,7 +63,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Item >
-                    <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/writing-code.png" height="50px"/>Quizzes</Nav.Link>
+                    <Nav.Link as={Link} to="/quiz" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/writing-code.png" height="50px"/>Quizzes</Nav.Link>
 
                     </Nav.Item>
                     
