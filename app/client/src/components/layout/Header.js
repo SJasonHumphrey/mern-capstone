@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Link} from 'react-router-dom'
 import {Navbar,Nav,Offcanvas} from 'react-bootstrap'
 
+
 const Header = () => {
 
     const [visible, setVisible] = useState(false)
@@ -42,11 +43,14 @@ const Header = () => {
                 <Navbar>
                 <Nav>
                     <Nav.Item>
+
                     <Nav.Link as={Link} to="/typing-test" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/keyboard.png" height="50px"/>Typing Practice</Nav.Link>
+
                     </Nav.Item>
 
                     <Nav.Item >
                     <Nav.Link as={Link} to="/code" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/laptopcoding.png" height="50px"/>Code Pen</Nav.Link>
+
                     </Nav.Item>
 
                     <Nav.Item >
@@ -60,6 +64,7 @@ const Header = () => {
 
                     <Nav.Item >
                     <Nav.Link as={Link} to="/login" onClick={handleClose} className="d-flex flex-column justify-content-center align-items-center rem3 rem12-w mono-font"><img src="images/color/writing-code.png" height="50px"/>Quizzes</Nav.Link>
+
                     </Nav.Item>
                     
 

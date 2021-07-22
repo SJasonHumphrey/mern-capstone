@@ -36,10 +36,22 @@ a:hover{
 }
 
 
+.footer-layout a {
+    color:#757579 !important;
+    text-decoration: none !important;
+}
+.footer-layout a:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
 
 .study-image{
     width:100%;
-    
+
+}
+
+ul {
+    list-style-type: none !important;
 }
 
 .offCanvasColor{
@@ -62,6 +74,8 @@ a:hover{
     height:100%;
     overflow-x:hidden;
 }
+
+
 
 
 

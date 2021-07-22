@@ -11,7 +11,7 @@ export default function TopNavigation() {
                 <div className="right">
                     <img className="logo" src={logo} alt="logo"/>
                     <div className="text">
-                        <h2>Team Async</h2>
+                        <h2 className="mono-font ">Code Pen</h2>
                     </div>
 
                 </div>

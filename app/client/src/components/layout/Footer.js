@@ -11,10 +11,11 @@ const Footer = () => {
                 </Col>
                 <Col sm={12} md={6} className="d-flex flex-column justify-content-center align-items-center pt-3 mono-font">
                 <p>Built By</p>
-                <p>&#123;Jason:&#125;</p>
-                <p>&#123;Gisselle:&#125;</p>
-                <p>&#123;Victoria:&#125;</p>
-                <p>&#123;Carol:&#125;</p>
+                <a href="https://github.com/SJasonHumphrey"><p>&#123;SJasonHumphrey&#125;</p></a>
+                <a href="https://github.com/SJasonHumphrey"><p>&#123;gisselleroldan&#125;</p></a>
+                {/* <p>&#123;Gisselle:&#125;</p> */}
+                <a href="https://github.com/Vlcgreen"><p>&#123;Vlcgreen&#125;</p></a>
+                <a href="https://github.com/EC-Carter"><p>&#123;EC-Carter&#125;</p></a>
                 </Col>
             </Row>
         </Container>
