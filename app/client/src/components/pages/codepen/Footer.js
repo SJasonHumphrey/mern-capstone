@@ -5,7 +5,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons';
 export default function Footer() {
     return (
         <div className="footer">
-            <p className="mono-font">Made with <FontAwesomeIcon color="#b7bbc8" icon={faReact} />Coding Buddy Code Pen</p>
+            <p className="mono-font">Made with <FontAwesomeIcon color="#b7bbc8" icon={faReact} /> Code Pen</p>
         </div>
     )
 }
