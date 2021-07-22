@@ -6,7 +6,7 @@ router = express.Router();
 let userSchema = require('../models/users');
 
 // CREATE 
-router.route('/create-user').post((req, res, next) => {
+router.route('/register').post((req, res, next) => {
     userSchema.create(req.body, (error, data) => {
         if (error) {
             return next(error)
@@ -18,7 +18,7 @@ router.route('/create-user').post((req, res, next) => {
 });
 
 // READ 
-router.route('/').get((req, res) => {
+router.route('/login').get((req, res) => {
     userSchema.find((error, data) => {
         if (error) {
             return next(error)
@@ -29,7 +29,7 @@ router.route('/').get((req, res) => {
 })
 
 // Get one user
-router.route('/see-user/:id').get((req, res) => {
+router.route('/login').get((req, res) => {
     userSchema.findById(req.params.id, (error, data) => {
         if (error) {
             return next(error)
@@ -40,24 +40,24 @@ router.route('/see-user/:id').get((req, res) => {
 })
 
 
-// Update 
-router.route('/update-user/:id').put((req, res, next) => {
-    studentSchema.findByIdAndUpdate(req.params.id, {
-        $set: req.body
-    }, (error, data) => {
-        if (error) {
-            return next(error);
-            console.log(error)
-        } else {
-            res.json(data)
-            console.log('Flashcard update successful')
-        }
-    })
-})
+// // Update 
+// router.route('').put((req, res, next) => {
+//     userSchema.findByIdAndUpdate(req.params.id, {
+//         $set: req.body
+//     }, (error, data) => {
+//         if (error) {
+//             return next(error);
+//             console.log(error)
+//         } else {
+//             res.json(data)
+//             console.log('user update successful')
+//         }
+//     })
+// })
 
 // Delete 
-router.route('/delete-flashcard/:id').delete((req, res, next) => {
-    studentSchema.findByIdAndRemove(req.params.id, (error, data) => {
+router.route('').delete((req, res, next) => {
+    userSchema.findByIdAndRemove(req.params.id, (error, data) => {
         if (error) {
             return next(error);
         } else {
