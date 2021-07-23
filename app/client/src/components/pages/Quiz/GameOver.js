@@ -1,14 +1,15 @@
 import styled from 'styled-components'
-import {Button} from './Button'
 
 const Title = styled.h1`
-    margin-top: 4em;
-    font-size: 48px;
+    font-size: 32px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+
 `;
 
 const Points = styled.p`
     font-size: 24px;
-    margin-bottom: 3em;
+    font-family: 'Share Tech Mono', monospace;
 `;
 
 const GameOver = ({pts}) => {
@@ -17,9 +18,10 @@ const GameOver = ({pts}) => {
 
     return (
         <>
-            <Title>Game Over</Title>
+            <Title>End of quiz
+            </Title>
             <Points>You got {pts} out of 10!</Points>
-            <Button onClick={refreshPage}>Retry</Button>
+            <button className="btn rounded-0 mono-font btn-lg btn-outline-dark " onClick={refreshPage}>Retry</button>
         </>
     )
 }
