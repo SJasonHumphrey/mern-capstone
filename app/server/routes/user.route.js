@@ -30,27 +30,53 @@ const token = (user) => {
 
 
 
-// CREATE 
-router.route('/register').post((req, res, next) => {
-    userSchema.create(req.body, (error, data) => {
-        if (error) {
-            return next(error)
-        } else {
-            console.log(data)
-            res.json(data)
-        }
-    })
-});
+// CREATE USER
+router.route('/register').post( async (req, res, next) => {
+    try{
+        let username = req.body.username;
+        let password = bcrypt.hashSync(req.body.password,8);
+
+        // if(check to see if username already exists in db){
+            //if not add user to db
+            // let user = await  - code to add user 
+
+            //let jwtToken = token(user);
+            //return res.json({token:jwtToken})
+        //} else { 
+            //return res.status(422).send({error:"username already exists"})
+        //}
+
+        //original
+        // userSchema.create(req.body, (error, data) => {
+        //     if (error) {
+        //         return next(error)
+        //     } else {
+        //         console.log(data)
+        //         res.json(data)
+        //     }
+        // })
+
+
+    } catch(e){
+        return res.status(430).send({error:`can't access database`})
+    }
+    
+});//eo register post route
 
 // READ 
-router.route('/login').get((req, res) => {
-    userSchema.find((error, data) => {
-        if (error) {
-            return next(error)
-        } else {
-            res.json(data)
-        }
-    })
+//where do I put the middleware when using this syntax?
+router.route('/login',middleware).get((req, res) => {
+
+//if makes it past middleware send back a token to client
+
+    //original
+    // userSchema.find((error, data) => {
+    //     if (error) {
+    //         return next(error)
+    //     } else {
+    //         res.json(data)
+    //     }
+    // })
 })
 
 // Get one user

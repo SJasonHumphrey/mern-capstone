@@ -8,7 +8,12 @@ const bcrypt = require('bcryptjs');
 const config = require('../secrets');
 
 
+
+
 //local strategy - inital login
+let localLogin = new LocalStrategy(()=>{
+    
+})
 
 
 //jwt strategy - once user has a jwt 
