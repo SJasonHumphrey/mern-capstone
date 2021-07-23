@@ -6,7 +6,7 @@ router = express.Router();
 let flashcardSchema = require('../models/flashcard');
 
 // CREATE 
-router.route('/flashcard/create').post((req, res, next) => {
+router.route('/create').post((req, res, next) => {
     flashcardSchema.create(req.body, (error, data) => {
         if (error) {
             return next(error)
@@ -18,7 +18,7 @@ router.route('/flashcard/create').post((req, res, next) => {
 });
 
 // READ 
-router.route('/flashcard').get((req, res) => {
+router.route('/').get((req, res) => {
     flashcardSchema.find((error, data) => {
         if (error) {
             return next(error)
@@ -29,7 +29,7 @@ router.route('/flashcard').get((req, res) => {
 })
 
 // Get one card
-router.route('/flashcard').get((req, res) => {
+router.route('/').get((req, res) => {
     flashcardSchema.findById(req.params.id, (error, data) => {
         if (error) {
             return next(error)
@@ -41,7 +41,7 @@ router.route('/flashcard').get((req, res) => {
 
 
 // Update 
-router.route('/flashcard/update').put((req, res, next) => {
+router.route('/update').put((req, res, next) => {
     flashcardSchema.findByIdAndUpdate(req.params.id, {
         $set: req.body
     }, (error, data) => {
@@ -56,7 +56,7 @@ router.route('/flashcard/update').put((req, res, next) => {
 })
 
 // Delete 
-router.route('/flashcard/delete').delete((req, res, next) => {
+router.route('/delete').delete((req, res, next) => {
     flashcardSchema.findByIdAndRemove(req.params.id, (error, data) => {
         if (error) {
             return next(error);
