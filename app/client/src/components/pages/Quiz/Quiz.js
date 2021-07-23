@@ -6,7 +6,7 @@ import GameOver from './GameOver';
 const QuizWindow = styled.div`
     text-align: center;
     font-size: clamp(20px, 2.5vw, 24px);
-    margin-top: 10vh;
+    
 `;
 
 const Options = styled.div`
@@ -26,13 +26,18 @@ const Option = styled.button`
     padding: 15px 30px;
     text-decoration: none;
     color: white;
-    background-color: #f72585;
+    background-color: #222F94;
     transition: 0.3s;
-    font-size: 1em;
+    font-size: .75em;
     outline: none;
     user-select: none;
     margin-top: 1em;
     cursor: pointer;
+    border-radius: 0;
+    &:hover {
+        color: white;
+        background-color: #FC4557;
+    }
     
     @media screen and (min-width: 1180px) {
         &:hover {
@@ -45,6 +50,7 @@ const Option = styled.button`
 const Question = styled.div`
     width: 70%;
     margin: 0 auto;
+    font-family: 'Share Tech Mono', monospace;
 `;
 
 const Quiz = () => {
