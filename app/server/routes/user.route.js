@@ -4,21 +4,34 @@ router = express.Router();
 
 // model:
 let userSchema = require('../models/users');
+let db = require('../db')
 
-// CREATE 
-router.route('/register').post((req, res, next) => {
-    userSchema.create(req.body, (error, data) => {
-        if (error) {
-            return next(error)
-        } else {
-            console.log(data)
-            res.json(data)
-        }
-    })
-});
+//CREATE 
+// router.route('/register').post((req, res, next) => {
+//     userSchema.create(req.body, (error, data) => {
+//         console.log( 'line 11',req.body)
+//         if (error) {
+//             return next(error)
+//         } else {
+//             console.log('line 15',data)
+//             res.json(data)
+//         }
+//     })
+// });
+
+router.route('/register').post( async (req, res) => {
+    const {username,password} = req.body;
+    let user = {};
+    user.username = username;
+    user.password = password;
+    let userModel = new userSchema(user)
+    await userModel.save()
+    res.json(userModel)
+})
+
 
 // READ 
-router.route('/login').get((req, res) => {
+router.route('/user/login/getAll').get((req, res) => {
     userSchema.find((error, data) => {
         if (error) {
             return next(error)
@@ -29,7 +42,7 @@ router.route('/login').get((req, res) => {
 })
 
 // Get one user
-router.route('/login').get((req, res) => {
+router.route('/user/login').get((req, res) => {
     userSchema.findById(req.params.id, (error, data) => {
         if (error) {
             return next(error)
