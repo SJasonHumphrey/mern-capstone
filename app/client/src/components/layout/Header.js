@@ -25,9 +25,9 @@ const Header = () => {
                     <Nav.Item>
                     <Nav.Link as={Link} to='/register' className="mono-font">Register</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                     <Nav.Link as={Link} to='/home' className="mono-font">Dashboard</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                     <Nav.Item>
                     <Nav.Link  onClick={handleShow} className="mono-font me-5">Study Tools</Nav.Link>
                     </Nav.Item>

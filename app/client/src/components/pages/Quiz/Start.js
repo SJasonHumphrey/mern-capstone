@@ -16,7 +16,7 @@ const Start = ({props}) => {
  
     return (
         <Intro>
-            <h1 className="mono-font font-weight-bold">Take the quiz.</h1>
+            <h1 className="mono-font font-weight-bold">Take the quiz</h1>
             <h4 className="mono-font">Are you ready?</h4>
             {/* <Button onClick={startQuiz} css={btnCSS}>Start</Button> */}
             <button onClick={startQuiz} className="btn mt-4 btn-lg mono-font rounded-0 btn-outline-dark ">Start</button>

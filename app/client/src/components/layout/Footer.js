@@ -13,7 +13,6 @@ const Footer = () => {
                 <p>Built By</p>
                 <a href="https://github.com/SJasonHumphrey"><p>&#123;SJasonHumphrey&#125;</p></a>
                 <a href="https://github.com/SJasonHumphrey"><p>&#123;gisselleroldan&#125;</p></a>
-                {/* <p>&#123;Gisselle:&#125;</p> */}
                 <a href="https://github.com/Vlcgreen"><p>&#123;Vlcgreen&#125;</p></a>
                 <a href="https://github.com/EC-Carter"><p>&#123;EC-Carter&#125;</p></a>
                 </Col>
