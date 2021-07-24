@@ -31,6 +31,7 @@ import CodePen from "./components/Code"
 import TypingTest from './components/typing-feature/TypingTest'
 import Cards from './components/Cards'
 import QuizApp from './components/QuizApp';
+import LoginMessage from './components/LoginMessage'
 
 
 //reducer
@@ -79,7 +80,7 @@ ReactDOM.render(
             <Route  exact path = '/' component={App}/>
             <Route  path = '/login' component={Login}/>
             <Route  path = '/register' component={Register}/>
-
+            <Route  path = '/loginmessage' component={LoginMessage}/>
             <Route   exact path = '/home' render={() => (
               <Auth>
                 <Home/>
