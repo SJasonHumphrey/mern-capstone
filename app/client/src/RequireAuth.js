@@ -9,7 +9,6 @@ const RequireAuth = (props) => {
     console.log(auth)
     useEffect(() => {
         if(!auth){
-            console.log(auth)
             history.push('/')
         }
     },[auth])

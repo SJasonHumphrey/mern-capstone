@@ -79,7 +79,14 @@ ReactDOM.render(
             <Route  exact path = '/' component={App}/>
             <Route  path = '/login' component={Login}/>
             <Route  path = '/register' component={Register}/>
-            <Route  path = '/home' component={Home}/>
+
+            <Route   exact path = '/home' render={() => (
+              <Auth>
+                <Home/>
+              </Auth>
+
+            )}/>
+
             <Route  path = '/code' component={CodePen}/>
             <Route  path = '/typing-test' component={TypingTest}/>
             <Route  path = '/resources' component={Resources}/>

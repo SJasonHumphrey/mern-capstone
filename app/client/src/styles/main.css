@@ -88,6 +88,24 @@ ul {
     color:#757579;
 
 }
+.logout-button:hover{
+    color:black;
+}
+
+.study-time{
+    color:black !important;
+}
+.study-time:hover{
+    color:white !important;
+}
+
+.login-link{
+    color:#FC4557 !important;
+}
+.home-card{
+    width:60%;
+    height:90%;
+}
 
 
 
@@ -149,6 +167,10 @@ ul {
     
 }
 
+.small-font{
+    font-size: 14px;
+    font-style: italic;
+}
 
 .codingBuddyLogo{
     width:25rem;

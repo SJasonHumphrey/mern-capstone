@@ -24,7 +24,7 @@ const Footer = () => {
                 </Col>
 
                 <Col sm={12} md={6} className="d-flex flex-column justify-content-center align-items-center pt-3 mono-font">
-                <p>Built By</p>
+                <p>Built By:</p>
                 <a href="https://github.com/SJasonHumphrey"><p>&#123;SJasonHumphrey&#125;</p></a>
                 <a href="https://github.com/SJasonHumphrey"><p>&#123;gisselleroldan&#125;</p></a>
                 {/* <p>&#123;Gisselle:&#125;</p> */}
