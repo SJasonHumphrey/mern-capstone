@@ -29,7 +29,7 @@ Many of the most popular CSS, HTML, and Javascript resources one one page. This 
 
 
 ## Database Schema
-![image](https://user-images.githubusercontent.com/81443343/126385959-0646d637-98ee-40d6-aa81-8a22bc01fa6e.png)
+![dbscreenshot](https://user-images.githubusercontent.com/81443343/126882509-3e55c32d-2c26-47b6-b95b-fe5a7671f0ad.PNG)
 
 
 
