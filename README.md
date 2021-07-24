@@ -2,18 +2,22 @@
 
 ## Typing Test
 Normal run of the mill typing tests only have regular text for you to practice with. Coding, however, is a whole different ball game. Our preview text includes real code snippets so you can practice typing all the special characters that you would use on your day to day as a developer. Coding is already hard enough without having the keyboard to slow you down. Practicing with special characters included will make sure your fingers never interfere with your thoughts.
+<img width="1144" alt="Screen Shot 2021-07-23 at 12 12 03 PM" src="https://user-images.githubusercontent.com/81443343/126880934-06085b62-9a29-47b9-abfc-4bcea08f806f.png">
 
 ## Code Pen
 A Code Pen is used for sharing, testing, and showcasing code snippets. Use this convenient feature as your code playground. There's no need to change between files and browser tabs, which makes the coding process quicker.
-
+<img width="962" alt="code pen" src="https://user-images.githubusercontent.com/81443343/126880962-75396ac8-b0b2-4f4d-9ef3-866055dd7d40.png">
 ## Flash Cards
-Make your own flash cards to study with! Customize your own to tailor your studying experience. You can add, edit, delete, and review your cards. Once a card is and you click "review" you will see the first question appear. Click the text once you've guessed to reveal the answer. 
+Make your own flash cards to study with! Customize your own to tailor your studying experience. You can add, edit, delete, and review your cards. Once a card is and you click "review" you will see the first question appear. Click the text once you've guessed to reveal the answer. </br>
+<img width="300" height="300" alt="create flash card" src="https://user-images.githubusercontent.com/81443343/126880821-662b24c2-685f-4312-bca7-6ad41ed402e1.png">
+>
 
 ## Quizzes
 Use our quiz feature to test your skills. Quizzes are a great way to check on the information that you have retained and a way to see what you still need to work on. Go through 10 code related questions, at the end you will see your score.
-
+<img src="https://user-images.githubusercontent.com/81443343/126880724-a723fc6b-c870-404b-b444-884ce47cdc8b.png" width="300" height="300"></img>
 ## Resources 
 Many of the most popular CSS, HTML, and Javascript resources one one page. This cuts down on having to find your own sites, we did that work for you.
+<img width="807" alt="resources" src="https://user-images.githubusercontent.com/81443343/126880888-9c82d153-72d8-484d-b456-6acc587dcaf6.png">
 
 
 ## Tech Stack
@@ -43,6 +47,11 @@ Many of the most popular CSS, HTML, and Javascript resources one one page. This 
 
 ## Stretch Goals (Future)
 - Protect with SSL certificate
+- Build out user dashboard with user statistics over time
+- Provide results overview on quiz completion
+- Further customize error handling
+- Add accuracy on typing test
+- Make quiz customizable
 
 ## Developer team
 Victoria - [Vlcgreen](https://github.com/Vlcgreen)
