@@ -15,10 +15,8 @@ app.use(express.static(path.join(__dirname, '../../../build')));
 
 
 // Express Route
-const flashcardRoutes = require('./routes/flashcard.route')
-
-app.use('/flashcards', flashcardRoutes)
-
+var userRoutes = require('./controllers/createUser')
+app.use('/user', userRoutes)
 
 
 app.get('/', (req, res)=> {
