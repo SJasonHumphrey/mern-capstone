@@ -81,8 +81,13 @@ ul {
     height:100%;
     overflow-x:hidden;
 }
+.logout-button{
+    border:0;
+    padding:0;
+    background-color:#FFEDEF;
+    color:#757579;
 
-
+}
 
 
 

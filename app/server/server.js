@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../../../build')));
 
 // Express Route
 var userRoutes = require('./controllers/createUser')
-app.use('/register', userRoutes)
+app.use('/user', userRoutes)
 
 
 app.get('/', (req, res)=> {

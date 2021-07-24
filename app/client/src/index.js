@@ -16,6 +16,8 @@ import './styles/index.css';
 import './styles/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//Auth
+import Auth from './RequireAuth';
 
 
 //components
@@ -79,12 +81,15 @@ ReactDOM.render(
             <Route  path = '/register' component={Register}/>
             <Route  path = '/home' component={Home}/>
             <Route  path = '/code' component={CodePen}/>
-
             <Route  path = '/typing-test' component={TypingTest}/>
-
             <Route  path = '/resources' component={Resources}/>
 
-            <Route  path = '/cards' component={Cards}/>
+            <Route exact path = '/cards' render={() => (
+                <Auth>
+                  <Cards/>
+                </Auth>
+                
+              )}/>
 
             <Route  path = '/quiz' component={QuizApp}/>
           </Switch>
