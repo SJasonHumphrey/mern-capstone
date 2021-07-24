@@ -9,8 +9,8 @@ const RequireAuth = (props) => {
     console.log(auth)
     useEffect(() => {
         if(!auth){
-            history.push('/')
-        }
+            history.push('/loginmessage')
+        } 
     },[auth])
     
     return props.children;
