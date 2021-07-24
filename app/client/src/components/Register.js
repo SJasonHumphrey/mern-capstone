@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
 import {Form,Button} from 'react-bootstrap';
 import axios from "axios";
+import {useHistory} from 'react-router-dom';
 
 
 const Register = () => {
+    const history = useHistory();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const handleSubmit = async (e) => {
@@ -15,6 +17,7 @@ const Register = () => {
             }
             const user = await axios.post('/user/register',userObject)
             console.log(user.data)
+            history.push('/login')
         } catch(e) {
             console.log(e);
         }
