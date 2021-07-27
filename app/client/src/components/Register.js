@@ -32,7 +32,7 @@ const Register = () => {
                 </Form.Group>
                 <Form.Group className="p-4">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control  value={password} onChange={(e)=>setPassword(e.target.value)}type='text' placeholder='enter password'></Form.Control>
+                    <Form.Control  value={password} onChange={(e)=>setPassword(e.target.value)}type='password' placeholder='enter password'></Form.Control>
                 </Form.Group>
                 <Button type="submit" className="align-self-center my-3 btn-lg rounded-0" variant="outline-light">Submit</Button>
                 
