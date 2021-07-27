@@ -26,7 +26,6 @@ const token = (user) => {
 }
 
 
-
 router.get('/', (req, res)=>{
     users.find((err,docs)=>{
         if(!err) res.send(docs)
